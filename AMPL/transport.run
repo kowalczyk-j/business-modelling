@@ -1,0 +1,6 @@
+reset;
+model transport.mod;
+data transport.dat;
+option solver cplex;
+solve;
+display koszt_transportu, roczny_transport_prod_mag, tygodniowy_transport_mag_sklep, tygodniowy_magazyn_sklepow > wyniki.txt;
